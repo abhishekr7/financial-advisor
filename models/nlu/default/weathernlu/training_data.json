@@ -1,0 +1,245 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Berlin",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather in Berlin at the moment?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "How is London right now?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 38,
+            "value": "Washington D.C.",
+            "entity": "location"
+          }
+        ],
+        "text": "Tell me the weather in Washington D.C."
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "Columbus",
+            "entity": "location"
+          }
+        ],
+        "text": "What's it like in Columbus?"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "greet",
+        "text": "Yo"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Adios"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "See ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Talk to you later"
+      },
+      {
+        "intent": "inform",
+        "text": "What's the weather today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "What's the weather in London today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "Paris",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me what's the weather in Paris"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "Vilnius",
+            "entity": "location"
+          }
+        ],
+        "text": "I wonder what is the weather in Vilnius right now?"
+      },
+      {
+        "intent": "inform",
+        "text": "what is the weather?"
+      },
+      {
+        "intent": "inform",
+        "text": "Tell me the weather"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Barcelona",
+            "entity": "location"
+          }
+        ],
+        "text": "Is the weather nice in Barcelona today?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "I am going to London today and I wonder what is the weather out there?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 34,
+            "value": "Amsterdam",
+            "entity": "location"
+          }
+        ],
+        "text": "I am planning my trip to Amsterdam. What is the weather out there?"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Dublin",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me the weather in Dublin, please"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "London",
+            "entity": "location"
+          }
+        ],
+        "text": "in London"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Lithuania",
+            "entity": "location"
+          }
+        ],
+        "text": "Lithuania"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ],
+        "text": "Oh, sorry, in Italy"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "Vilnius",
+            "entity": "location"
+          }
+        ],
+        "text": "Tell me the weather in Vilnius"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 25,
+            "end": 30,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ],
+        "text": "The weather condition in Italy"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
