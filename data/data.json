@@ -1,0 +1,28 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "adios",
+        "entities": []
+      },
+      {
+        "text": "What's the weather like in Pune right now ?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "Pune",
+            "entity": "location"
+          }
+        ]
+      }
+    ]
+  }
+}
