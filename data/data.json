@@ -12,18 +12,30 @@
         "entities": []
       },
       {
-        "text": "What's the weather in Berlin at the moment?",
-        "intent": "inform",
+        "text": "How is AMZN doing ",
+        "intent": "stock",
         "entities": [
           {
-            "start": 22,
-            "end": 28,
-            "value": "Berlin",
-            "entity": "location"
+            "start": 7,
+            "end": 11,
+            "value": "AMZN",
+            "entity": "symbol"
           }
         ]
       },
-	  {
+      {
+        "text": "What are forex conversion rates for INR",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 36,
+            "end": 39,
+            "value": "INR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
@@ -39,7 +51,7 @@
         "entities": []
       },
       {
-        "text": "heya",
+        "text": "hey there",
         "intent": "greet",
         "entities": []
       },
@@ -49,7 +61,12 @@
         "entities": []
       },
       {
-        "text": "hey there",
+        "text": "heya !",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey!",
         "intent": "greet",
         "entities": []
       },
@@ -59,17 +76,17 @@
         "entities": []
       },
       {
-        "text": "goodbye",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
         "text": "bye bye",
         "intent": "goodbye",
         "entities": []
       },
       {
-        "text": "see ya",
+        "text": "see ya ",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl",
         "intent": "goodbye",
         "entities": []
       },
@@ -79,161 +96,614 @@
         "entities": []
       },
       {
-        "text": "What's the weather today?",
-        "intent": "inform",
-        "entities": []
-      },
-      {
-        "text": "What's the weather in London today?",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 22,
-            "end": 28,
-            "value": "London",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "Show me what's the weather in Paris",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 30,
-            "end": 35,
-            "value": "Paris",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "I wonder what is the weather in Vilnius right now?",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 32,
-            "end": 39,
-            "value": "Vilnius",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "what is the weather?",
-        "intent": "inform",
-        "entities": []
-      },
-      {
-        "text": "Tell me the weather",
-        "intent": "inform",
-        "entities": []
-      },
-      {
-        "text": "Is the weather nice in Barcelona today?",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 23,
-            "end": 32,
-            "value": "Barcelona",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "I am going to London today and I wonder what is the weather out there?",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 14,
-            "end": 20,
-            "value": "London",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "I am planning my trip to Amsterdam. What is the weather out there?",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 25,
-            "end": 34,
-            "value": "Amsterdam",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "Show me the weather in Dublin, please",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 23,
-            "end": 29,
-            "value": "Dublin",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "in London",
-        "intent": "inform",
-        "entities": [
-          {
-            "start": 3,
-            "end": 9,
-            "value": "London",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "Lithuania",
-        "intent": "inform",
+        "text": "JPY",
+        "intent": "forex",
         "entities": [
           {
             "start": 0,
-            "end": 9,
-            "value": "Lithuania",
-            "entity": "location"
+            "end": 3,
+            "value": "JPY",
+            "entity": "base"
           }
         ]
       },
       {
-        "text": "Oh, sorry, in Italy",
-        "intent": "inform",
+        "text": "GBP",
+        "intent": "forex",
         "entities": [
           {
-            "start": 14,
+            "start": 0,
+            "end": 3,
+            "value": "GBP",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "forex rates for CNY",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 16,
             "end": 19,
-            "value": "Italy",
-            "entity": "location"
+            "value": "CNY",
+            "entity": "base"
           }
         ]
       },
       {
-        "text": "Tell me the weather in Vilnius",
-        "intent": "inform",
+        "text": "foreign exchange rates for CNY",
+        "intent": "forex",
         "entities": [
           {
-            "start": 23,
+            "start": 27,
             "end": 30,
-            "value": "Vilnius",
-            "entity": "location"
+            "value": "CNY",
+            "entity": "base"
           }
         ]
       },
       {
-        "text": "The weather condition in Italy",
-        "intent": "inform",
+        "text": "currency conversion rates for EUR",
+        "intent": "forex",
         "entities": [
           {
-            "start": 25,
+            "start": 30,
+            "end": 33,
+            "value": "EUR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "currency rates for INR",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "INR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "INR ?",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "INR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "currency rates for GBP",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 19,
+            "end": 22,
+            "value": "GBP",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "forex rates for JPY",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "JPY",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "currency conversion for base EUR",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 29,
+            "end": 32,
+            "value": "EUR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "I want to know about LYFT",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "LYFT",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "GOOGL",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "GOOGL",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "I want to invest in GOOGL",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "GOOGL",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "Details about the AMZN stock",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "AMZN",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "Please show me the details about MSFT",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 33,
+            "end": 37,
+            "value": "MSFT",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "how is AAPL doing ?",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "AAPL",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "FB ?",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "FB",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "I want to put my money in CSCO Can I know more about it ?",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 26,
             "end": 30,
-            "value": "Italy",
-            "entity": "location"
+            "value": "CSCO",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "I am thinking about day trading. Can I know about the FB stock ?",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 54,
+            "end": 56,
+            "value": "FB",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "I want to invest my money in stocks. Give me details about AAPL",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 59,
+            "end": 63,
+            "value": "AAPL",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "INR to JPY",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "INR",
+            "entity": "src"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "JPY",
+            "entity": "dest"
+          }
+        ]
+      },
+      {
+        "text": "convert rupee to dollar",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "USD",
+            "entity": "dest"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "value": "INR",
+            "entity": "src"
+          }
+        ]
+      },
+      {
+        "text": "japanese yen ?",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "JPY",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "rupees!",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "INR",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "dollar",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "USD",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "In terms of pound",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "GBP",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "chinese yuan",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "CNY",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "china reminbi",
+        "intent": "forex",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "CNY",
+            "entity": "base"
+          }
+        ]
+      },
+      {
+        "text": "conversion from pounds to euros",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "GBP",
+            "entity": "src"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "value": "EUR",
+            "entity": "dest"
+          }
+        ]
+      },
+      {
+        "text": "japanese yen to china yuan",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "JPY",
+            "entity": "src"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "CNY",
+            "entity": "dest"
+          }
+        ]
+      },
+      {
+        "text": "convert rupees to USD",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "USD",
+            "entity": "dest"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "value": "INR",
+            "entity": "src"
+          }
+        ]
+      },
+      {
+        "text": "india to usa",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "INR",
+            "entity": "src"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "value": "USD",
+            "entity": "dest"
+          }
+        ]
+      },
+      {
+        "text": "JPY to china conversion",
+        "intent": "convert",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "JPY",
+            "entity": "src"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "CNY",
+            "entity": "dest"
+          }
+        ]
+      },
+      {
+        "text": "give me details about the AMZN stock for the past 10 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 26,
+            "end": 30,
+            "value": "AMZN",
+            "entity": "symbol"
+          },
+          {
+            "start": 50,
+            "end": 52,
+            "value": "10",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "past close values of MSFT for 5 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "MSFT",
+            "entity": "symbol"
+          },
+          {
+            "start": 30,
+            "end": 31,
+            "value": "5",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "how has AAPL faired in the past 7 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "AAPL",
+            "entity": "symbol"
+          },
+          {
+            "start": 32,
+            "end": 33,
+            "value": "7",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "LYFT in 3 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "LYFT",
+            "entity": "symbol"
+          },
+          {
+            "start": 8,
+            "end": 9,
+            "value": "3",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "Apple performance in the last 9 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 30,
+            "end": 31,
+            "value": "9",
+            "entity": "days"
+          },
+          {
+            "start": 0,
+            "end": 5,
+            "value": "AAPL",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "10 day performance of microsoft ?",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "10",
+            "entity": "days"
+          },
+          {
+            "start": 22,
+            "end": 31,
+            "value": "MSFT",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "Before I invest in google, I need to an insight about its performance in the past 6 days",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "GOOGL",
+            "entity": "symbol"
+          },
+          {
+            "start": 82,
+            "end": 83,
+            "value": "6",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "I need to plan out my investment strategy. Can you show me lyft's performance in the past few days ?",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 90,
+            "end": 93,
+            "value": "8",
+            "entity": "days"
+          },
+          {
+            "start": 59,
+            "end": 63,
+            "value": "LYFT",
+            "entity": "symbol"
+          }
+        ]
+      },
+      {
+        "text": "4 days details for goldman stocks ",
+        "intent": "historic",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "GS",
+            "entity": "symbol"
+          },
+          {
+            "start": 0,
+            "end": 1,
+            "value": "4",
+            "entity": "days"
+          }
+        ]
+      },
+      {
+        "text": "How is facebook doing ?",
+        "intent": "stock",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "FB",
+            "entity": "symbol"
           }
         ]
       }
