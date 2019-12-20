@@ -1,30 +1,58 @@
-
 slots:
-  location:
+  symbol:
+    type: text
+  base:
+    type: text
+  src:
+    type: text
+  dest:
+    type: text
+  days:
     type: text
 
 
 intents:
  - greet
  - goodbye
- - inform
-
+ - stock
+ - forex
+ - convert
+ - historic
 
 entities:
- - location
+ - symbol
+ - base
+ - src
+ - dest
+ - days
 
 templates:
   utter_greet:
     - text: 'Hello! How can I help?'
+    - text: 'FinA at your service!'
+    - text: 'Hi I am FinA. I can help you in stock investment and day trading.'
   utter_goodbye:
     - text: 'Talk to you later.'
     - text: 'Bye bye :('
-  utter_ask_location:
-    - text: 'In what location?'
-
+  utter_ask_company:
+    - text: 'Name of the company ?'
+  utter_ask_ticker:
+    - text: 'What is the ticker symbol for this company as registered in NASDAQ ?'
+  utter_ask_base:
+    - text: 'Base currency ?'
+    - text: 'What is the base you are considering ?'
+  utter_ask_days:
+    - text: 'Time frame ?'
+    - text: 'How many days prior ?'
 
 actions:
  - utter_greet
  - utter_goodbye
- - utter_ask_location
- - action_weather
+ - utter_ask_company
+ - utter_ask_ticker
+ - utter_ask_base
+ - utter_ask_days
+ - action_stock
+ - action_forex
+ - action_convert
+ - action_historic

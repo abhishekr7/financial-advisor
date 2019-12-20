@@ -2,29 +2,36 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import unicode_literals
 
-from rasa_core_sdk import Action
-from rasa_core_sdk.events import SlotSet
+from rasa_core.actions.action import Action
+from rasa_core.events import SlotSet
 
-class ActionWeather(Action):
+import requests
+
+class ActionStock(Action):
 	def name(self):
-		return 'action_weather'
+		return 'action_stock'
 
 	def run(self, dispatcher, tracker, domain):
-		from apixu.client import ApixuClient
-		api_key = '5562f1ddb167ba9f745a793c45d66d26' #your apixu key
-		client = ApixuClient(api_key)
 
-		loc = tracker.get_slot('location')
-		current = client.getcurrent(q=loc)
+		 # worldtradingdata api key
+		api_token = "WDfwGuk6Te3Gtjwb5dE55IOeF1EfBsSodusSaC65shAn0TRBgWce25Jb48r4"
+		symbol_loc = tracker.get_slot('symbol')
 
-		country = current['location']['country']
-		city = current['location']['name']
-		condition = current['current']['condition']['text']
-		temperature_c = current['current']['temp_c']
-		humidity = current['current']['humidity']
-		wind_mph = current['current']['wind_mph']
+		json_obj = requests.get("https://api.worldtradingdata.com/api/v1/stock?symbol="+ symbol_loc + "&api_token="+ api_token)
 
-		response = """It is currently {} in {} at the moment. The temperature is {} degrees, the humidity is {}% and the wind speed is {} mph.""".format(condition, city, temperature_c, humidity, wind_mph)
+		json = json_obj.json()
+
+		ticker_symbol = json_obj['data'][0]['symbol']
+		company_name = json_obj['data'][0]['name']
+		currency = json_obj['data'][0]['currency']
+		close = json_obj['data'][0]['price']
+		open = json_obj['data'][0]['price_open']
+		high = json_obj['data'][0]['day_high']
+		low = json_obj['data'][0]['day_low']
+		volume = json_obj['data'][0]['volume']
+
+		response = "\t{} \n Company : {} \n currency : {} \n close : {} \n open : {} \n high : {} \n low : {} \n volume : {}"".format(ticker_symbol, company_name, currency, close, open, high, low, volume)
 
 		dispatcher.utter_message(response)
-		return [SlotSet('location',loc)]
+
+		return [SlotSet('symbol',symbol_loc)]

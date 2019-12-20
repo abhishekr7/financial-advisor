@@ -1,90 +1,23 @@
-## Generated Story 3320800183399695936
+## story 1
 * greet
     - utter_greet
-* inform
-    - utter_ask_location
-* inform{"location": "italy"}
-    - slot{"location": "italy"}
-    - action_weather
-    - slot{"location": "italy"}
+
+## story 2
 * goodbye
     - utter_goodbye
-    - export
-## Generated Story -3351152636827275381
+
+## story 3
+* stock
+    - utter_ask_company
+    - utter_ask_ticker
+
+## story 4
+* stock
+    - action_stock
+## Generated Story 2251245637380994242
 * greet
     - utter_greet
-* inform{"location": "London"}
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_goodbye
-    - export
-## Generated Story 8921121480760034253
-* greet
-    - utter_greet
-* inform
-    - utter_ask_location
-* inform{"location":"London"}
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_goodbye
-    - export
-## Generated Story -5208991511085841103
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_goodbye
-    - export
-## Generated Story -5208991511085841103
-    - slot{"location": "London"}
-    - action_weather
-* goodbye
-    - utter_goodbye
-    - export
-## story_001
-* greet
-   - utter_greet
-* inform
-   - utter_ask_location
-* inform{"location":"London"}
-   - slot{"location": "London"}
-   - action_weather
-* goodbye
-   - utter_goodbye
-## story_002
-* greet
-   - utter_greet
-* inform{"location":"Paris"}
-   - slot{"location": "Paris"}
-   - action_weather
-* goodbye
-   - utter_goodbye
-## story_003
-* greet
-   - utter_greet
-* inform
-   - utter_ask_location
-* inform{"location":"Vilnius"}
-   - slot{"location": "Vilnius"}
-   - action_weather
-* goodbye
-   - utter_goodbye
-## story_004
-* greet
-   - utter_greet
-* inform{"location":"Italy"}
-   - slot{"location": "Italy"}
-   - action_weather
-* goodbye
-   - utter_goodbye
-## story_005
-* greet
-   - utter_greet
-* inform
-   - utter_ask_location
-* inform{"location":"Lithuania"}
-   - slot{"location": "Lithuania"}
-   - action_weather
-* goodbye
-   - utter_goodbye
+* stock{"symbol": "amzn"}
+    - slot{"symbol": "amzn"}
+    - action_stock
+
