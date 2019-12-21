@@ -1,23 +1,33 @@
-## story 1
-* greet
-    - utter_greet
-
-## story 2
-* goodbye
-    - utter_goodbye
-
-## story 3
-* stock
-    - utter_ask_company
-    - utter_ask_ticker
-
-## story 4
-* stock
-    - action_stock
-## Generated Story 2251245637380994242
+## Generated Story 1803269275812352155
 * greet
     - utter_greet
 * stock{"symbol": "amzn"}
     - slot{"symbol": "amzn"}
     - action_stock
+    - slot{"symbol": "amzn"}
+* goodbye
+    - utter_goodbye
 
+## Generated Story -3547198029840253859
+* greet
+    - utter_greet
+* stock{"symbol": "AMZN"}
+    - slot{"symbol": "AMZN"}
+    - action_stock
+    - slot{"symbol": "AMZN"}
+* stock{"symbol": "FB"}
+    - slot{"symbol": "FB"}
+    - action_stock
+    - slot{"symbol": "FB"}
+* stock{"symbol": "GOOGL"}
+    - slot{"symbol": "GOOGL"}
+    - action_stock
+    - slot{"symbol": "GOOGL"}
+* goodbye
+    - utter_goodbye
+
+## Generated Story 8128637270947070743
+* greet
+    - utter_greet
+* goodbye
+    - utter_goodbye
