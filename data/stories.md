@@ -31,3 +31,34 @@
     - utter_greet
 * goodbye
     - utter_goodbye
+
+## Generated Story 8896921192798124040
+* greet
+    - utter_greet
+* stock{"symbol": "amzn"}
+    - slot{"symbol": "amzn"}
+    - action_stock
+
+## Generated Story 3957560372568500140
+* greet
+    - utter_greet
+* historic{"symbol": "amzn"}
+    - slot{"symbol": "amzn"}
+    - action_stock
+
+## Generated Story -6002587277078068760
+* greet
+    - utter_greet
+* stock{"symbol": "amzn"}
+    - slot{"symbol": "amzn"}
+    - action_stock
+
+## Generated Story 5645034855017147256
+* greet
+    - utter_greet
+* stock{"symbol": "amzn"}
+    - slot{"symbol": "amzn"}
+    - action_stock
+    - slot{"symbol": "amzn"}
+* goodbye
+    - utter_goodbye

@@ -1,58 +1,55 @@
+%YAML 1.1
+---
+actions:
+- action_convert
+- action_forex
+- action_historic
+- action_stock
+- utter_ask_base
+- utter_ask_company
+- utter_ask_days
+- utter_ask_ticker
+- utter_goodbye
+- utter_greet
+entities:
+- base
+- days
+- dest
+- src
+- symbol
+intents:
+- goodbye
+- greet
+- stock
+- historic
+- forex
+- convert
 slots:
-  symbol:
-    type: text
   base:
-    type: text
-  src:
-    type: text
-  dest:
     type: text
   days:
     type: text
-
-
-intents:
- - greet
- - goodbye
- - stock
- - forex
- - convert
- - historic
-
-entities:
- - symbol
- - base
- - src
- - dest
- - days
-
+  dest:
+    type: text
+  src:
+    type: text
+  symbol:
+    type: text
 templates:
-  utter_greet:
-    - text: 'Hello! How can I help?'
-    - text: 'FinA at your service!'
-    - text: 'Hi I am FinA. I can help you in stock investment and day trading.'
-  utter_goodbye:
-    - text: 'Talk to you later.'
-    - text: 'Bye bye :('
-  utter_ask_company:
-    - text: 'Name of the company ?'
-  utter_ask_ticker:
-    - text: 'What is the ticker symbol for this company as registered in NASDAQ ?'
   utter_ask_base:
-    - text: 'Base currency ?'
-    - text: 'What is the base you are considering ?'
+  - text: Base currency ?
+  - text: What is the base you are considering ?
+  utter_ask_company:
+  - text: Name of the company ?
   utter_ask_days:
-    - text: 'Time frame ?'
-    - text: 'How many days prior ?'
-
-actions:
- - utter_greet
- - utter_goodbye
- - utter_ask_company
- - utter_ask_ticker
- - utter_ask_base
- - utter_ask_days
- - action_stock
- - action_forex
- - action_convert
- - action_historic
+  - text: Time frame ?
+  - text: How many days prior ?
+  utter_ask_ticker:
+  - text: What is the ticker symbol for this company as registered in NASDAQ ?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: FinA at your service!
+  - text: Hi I am FinA. I can help you in stock investment and day trading.
