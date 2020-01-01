@@ -18,11 +18,11 @@ entities:
 - src
 - symbol
 intents:
-- goodbye
-- greet
-- stock
 - historic
+- greet
+- goodbye
 - forex
+- stock
 - convert
 slots:
   base:

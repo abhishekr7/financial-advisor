@@ -16,3 +16,49 @@
 2019-12-31 00:26:37,779 [DEBUG]  Available web server routes: 
 /webhooks/rest                                     GET                            custom_webhook_CmdlineInput.health
 /webhooks/rest/webhook                             POST                           custom_webhook_CmdlineInput.receive
+2019-12-31 02:27:10,944 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\abhishek\anaconda3\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 573, in run_until_complete
+    return future.result()
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 1367, in create_server
+    % (sa, err.strerror.lower())) from None
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5005): only one usage of each socket address (protocol/network address/port) is normally permitted
+2019-12-31 02:29:51,453 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\abhishek\anaconda3\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 573, in run_until_complete
+    return future.result()
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 1367, in create_server
+    % (sa, err.strerror.lower())) from None
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5005): only one usage of each socket address (protocol/network address/port) is normally permitted
+2019-12-31 02:50:16,995 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\abhishek\anaconda3\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 573, in run_until_complete
+    return future.result()
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 1367, in create_server
+    % (sa, err.strerror.lower())) from None
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 5005): only one usage of each socket address (protocol/network address/port) is normally permitted
+2019-12-31 19:50:40,085 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "c:\users\abhishek\anaconda3\lib\site-packages\sanic\app.py", line 1096, in run
+    serve(**server_settings)
+  File "c:\users\abhishek\anaconda3\lib\site-packages\sanic\server.py", line 770, in serve
+    loop.run_forever()
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 528, in run_forever
+    self._run_once()
+  File "c:\users\abhishek\anaconda3\lib\asyncio\base_events.py", line 1728, in _run_once
+    event_list = self._selector.select(timeout)
+  File "c:\users\abhishek\anaconda3\lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "c:\users\abhishek\anaconda3\lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+  File "c:\users\abhishek\anaconda3\lib\site-packages\socketio\client.py", line 25, in signal_handler
+    return original_signal_handler(sig, frame)
+  File "c:\users\abhishek\anaconda3\lib\site-packages\engineio\client.py", line 43, in signal_handler
+    return original_signal_handler(sig, frame)
+KeyboardInterrupt
